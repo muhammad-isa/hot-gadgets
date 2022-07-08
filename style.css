@@ -1,0 +1,24 @@
+.container{
+    margin-bottom: 5em;
+}
+.second-layer{
+    background-image: url(bg-1.png),url(bg-2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top, bottom left;
+    height: 90vh;
+}
+.carousel-inner .h1,p{
+    color: black;
+}
+
+.half-car{
+    border: solid gray 3px;
+    text-align: center;
+}
+.d-img{
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding-left: 1em;
+    object-fit: contain;
+    width: 15vw;
+    height: 25em;
