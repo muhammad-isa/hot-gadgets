@@ -2,6 +2,16 @@
     margin-bottom: 5em;
 }
 
+.navbar .navbar-toggler{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.5em 1.5em;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0;
+}
 .navbar a{
     color: black;
 }
@@ -38,8 +48,6 @@
 .half-car{
     text-align: left;
     height: 70vh;
-    width: 10vw;
-    box-sizing: border-box;
 }
 .car-img{
     height: 70vh;
@@ -52,20 +60,26 @@
 
 @media (max-width:700px) {
     .logo-main{
-        width:6em;
+        width:5em;
     }
     .container{
         margin-bottom: 1em;
     }
     .second-layer{
-        background-image: url(bg-1.png);
-        background-repeat: no-repeat;
-        background-position: center top,;
-        height: 90vh;
+        background-image: url('bg-1.png'),url('bg-2.png');
+        background-repeat: no-repeat, no-repeat;
+        background-position: center top, left bottom;
+        height: 33vh;
+        background-size: contain, 7em 7em;
+    }
+    .carousel-item h1{
+        font-weight: 400;
+        margin: .5em 0;
     }
     
     .carousel-item h6{
-        font-weight: 300;
+        font-size: .8em;
+        font-weight: 350;
         margin-bottom: 2em ;
     }
     .buy-now-btn{
@@ -73,14 +87,13 @@
         padding: .5em 1em;
         font-size: 1em;
     }
-    .car-cont{
-        flex-direction: column-reverse;
-    }
-    .half-car{
+    .carousel-inner .half-car{
+        width: 50vw;
         height: 28vh;
+        
     }
     .car-img{
-        height: 28vh;
+        height: 24vh;
     }
     .second-layer button{
         visibility: hidden;
