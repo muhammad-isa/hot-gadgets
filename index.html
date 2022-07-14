@@ -7,14 +7,14 @@
     <title>Hot Gadgets</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
     <section class="container first-layer">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png" alt="">
+                    <img class="logo-main" src="logo.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,7 +25,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Donate Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.html" ">About Us</a>
@@ -37,34 +37,74 @@
     </section>
 
     <section class="container second-layer">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-bg" data-bs-ride="true">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active d-flex row justify-content-center">
-                    <div class="col-md-6 half-car">
-                        <div>
-                            <h1>Sony Bravia OLED 24"</h1>
+                <div class="carousel-item active">
+                    <div class="row car-cont">
+                        <div class="d-flex half-car justify-content-center align-items-center col-sm-6">
+                            <div>
+                                <h1>Mackbook Pro</h1>
+                                <h6>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+                                </h6>
+                                <a type="button" class="buy-now-btn" href="#">Buy Now
+                                    <img src="right-arrow.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="half-car d-flex col-sm-6 justify-content-center align-items-center">
+                            <img class="car-img" src="banner-products/product-1.png" class="d-block car-img w-100" alt="...">
                         </div>
                     </div>
-                    <div class="half-car col-md-6 justify-content-center align-items-center">
-                        <img src="banner-products/product-1.png" class="d-block car-img w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <div class="row car-cont">
+                        <div class="d-flex half-car justify-content-center align-items-center col-sm-6">
+                            <div>
+                                <h1>Google Home</h1>
+                                <h6>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+                                </h6>
+                                <a type="button" class="buy-now-btn" href="#">Buy Now
+                                    <img src="right-arrow.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="half-car d-flex col-sm-6 justify-content-center align-items-center">
+                            <img class="car-img" src="banner-products/slider-1.png" class="d-block car-img w-100" alt="...">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <div class="carousel-item">
+                    <div class="row car-cont">
+                        <div class="d-flex half-car justify-content-center align-items-center col-sm-6">
+                            <div>
+                                <h1>JBL Speakers</h1>
+                                <h6>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.
+                                </h6>
+                                <a type="button" class="buy-now-btn" href="#">Buy Now
+                                    <img src="right-arrow.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="half-car d-flex col-sm-6 justify-content-center align-items-center">
+                            <img class="car-img" src="banner-products/slider-3.png" class="d-block car-img w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
-    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
