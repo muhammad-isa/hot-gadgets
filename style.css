@@ -38,8 +38,6 @@
 .half-car{
     text-align: left;
     height: 70vh;
-    width: 10vw;
-    box-sizing: border-box;
 }
 .car-img{
     height: 70vh;
@@ -52,7 +50,7 @@
 
 @media (max-width:700px) {
     .logo-main{
-        width:6em;
+        width:5em;
     }
     .container{
         margin-bottom: 1em;
@@ -63,9 +61,14 @@
         background-position: center top,;
         height: 90vh;
     }
+    .carousel-item h1{
+        font-weight: 400;
+        margin: .5em 0;
+    }
     
     .carousel-item h6{
-        font-weight: 300;
+        font-size: .8em;
+        font-weight: 350;
         margin-bottom: 2em ;
     }
     .buy-now-btn{
@@ -73,14 +76,13 @@
         padding: .5em 1em;
         font-size: 1em;
     }
-    .car-cont{
-        flex-direction: column-reverse;
-    }
-    .half-car{
+    .carousel-inner .half-car{
+        width: 50vw;
         height: 28vh;
+        
     }
     .car-img{
-        height: 28vh;
+        height: 24vh;
     }
     .second-layer button{
         visibility: hidden;
