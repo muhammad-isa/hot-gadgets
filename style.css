@@ -93,6 +93,9 @@
     padding: 2em 0em;
 }
 
+.fifth-layer{
+    height: 100vh ;
+}
 
 div #cat-bottom{
     background-image: linear-gradient(45deg, lightsalmon, tomato);
@@ -103,10 +106,39 @@ div #cat-bottom{
 
 }
 
-.catagroies:hover #cat-bottom{
+.fifth-layer:hover #cat-bottom{
     transform: scaleX(8);
     transition: .4s ease-out;
-    border-radius: .05em;
+    border-radius: .06em;
+}
+
+.catagories{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.catagories .image{
+    width: 40vw;
+}
+.cat-div{
+    box-sizing: border-box;
+    border-radius: 1em;
+    box-shadow: .1em .1em 1em #80808075;
+    padding: 2em  .5em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    color: black;
+    margin-right: 1em;
+}
+.cat-div img{
+
+}
+
+footer h5{
+    text-align: center;
+    font-size: .5em;
 }
 @media (max-width:700px) {
     .logo-main{
@@ -187,4 +219,44 @@ div #cat-bottom{
     .card-body h5{
         padding: 1em 0em;
     }
+
+    .catagories{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fifth-layer:hover #cat-bottom{
+        transform: scaleX(6);
+        transition: .4s ease-out;
+        border-radius: .06em;
+    }
+    .cat-div{
+        width: fit-content;
+        height: fit-content;
+        padding: .5em 1.2em;
+        border-radius: .5em;
+        margin-bottom: 2.2em;
+        margin-right: 1em;
+    }
+    .cat-div img{
+        width: 5em;
+        padding: .2em .5em;
+        margin-bottom: .5em;
+    }
+    .cat-div h4{
+        font-size: 1em;
+    }
+    
+    .cat-col{
+        width: fit-content;
+    }
+    .cat-col .picture-cat{
+        width: 90vw;
+    }
+    .fifth-layer{
+        height: 90vh ;
+    }
 }
+    
+    
