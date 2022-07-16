@@ -119,9 +119,6 @@ div #cat-bottom{
     align-items: center;
 }
 
-.catagories .image{
-    width: 40vw;
-}
 .cat-div{
     box-sizing: border-box;
     border-radius: 1em;
@@ -133,8 +130,8 @@ div #cat-bottom{
     margin-right: 1em;
     width:  fit-content;
 }
-.cat-div img{
-
+.cat-col .picture-cat{
+    width: 40em;
 }
 
 footer h5{
