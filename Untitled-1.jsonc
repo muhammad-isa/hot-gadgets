@@ -1,0 +1,25 @@
+{
+    "code-runner.runInTerminal": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 0,
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.colorTheme": "Night Owl",
+    "workbench.iconTheme": "material-icon-theme",
+    "git.autofetch": true,
+    "editor.linkedEditing": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "/css"
+        }
+    ],
+    "auto-rename-tag.activationOnLanguage": [
+
+        "*"
+    ],
+}
