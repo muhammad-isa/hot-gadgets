@@ -126,11 +126,12 @@ div #cat-bottom{
     box-sizing: border-box;
     border-radius: 1em;
     box-shadow: .1em .1em 1em #80808075;
-    padding: 2em  .5em;
+    padding: 1.5em  3em;
     margin-bottom: 2em;
     text-decoration: none;
     color: black;
     margin-right: 1em;
+    width:  fit-content;
 }
 .cat-div img{
 
@@ -138,7 +139,7 @@ div #cat-bottom{
 
 footer h5{
     text-align: center;
-    font-size: .5em;
+    font-size: .8em;
 }
 @media (max-width:700px) {
     .logo-main{
@@ -238,6 +239,7 @@ footer h5{
         border-radius: .5em;
         margin-bottom: 2.2em;
         margin-right: 1em;
+        margin-left: 0;
     }
     .cat-div img{
         width: 5em;
